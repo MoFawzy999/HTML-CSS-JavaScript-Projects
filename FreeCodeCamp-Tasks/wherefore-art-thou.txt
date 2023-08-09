@@ -1,0 +1,17 @@
+function whatIsInAName(collection, source) {
+   let newArr = [] ;
+   for(let i = 0 ; i < collection.length ; i++){
+       let foundMismatch = false;
+       for(let s in source){
+           if(collection[i][s] !== source[s]){
+              foundMismatch = true;
+           }
+       }
+       if(!foundMismatch){
+         newArr.push(collection[i]);
+       }
+   }
+   return newArr ;
+}
+
+whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });

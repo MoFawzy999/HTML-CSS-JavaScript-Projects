@@ -1,0 +1,6 @@
+function spinalCase(str) {
+    let newStr = str.replace(/([a-z])([A-Z])/g, "$1 $2").replace(/\s+|_+/g,"-");
+   return newStr.toLowerCase() ;
+}
+
+spinalCase('This Is Spinal Tap');
