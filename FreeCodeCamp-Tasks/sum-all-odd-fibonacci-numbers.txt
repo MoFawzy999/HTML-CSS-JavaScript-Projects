@@ -1,0 +1,14 @@
+function sumFibs(num) {
+  let prevNum = 0, curNum = 1 ;
+  let sum = 0;
+  while(curNum <= num){
+    if(curNum % 2 !== 0){
+       sum += curNum ;
+     }
+    curNum += prevNum ;
+    prevNum = curNum - prevNum ;
+  }
+  return sum;
+}
+
+sumFibs(4);
