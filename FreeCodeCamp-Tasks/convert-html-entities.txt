@@ -1,0 +1,26 @@
+function convertHTML(str) {
+   let regex1 = /^'+|'$/g ;
+   let regex2 = /^"+|"$/g ;
+   if(str[0] == /^"+/g  && str[str.length-1] == /"$/g ){
+         str.replace(regex1,"");
+   }else{
+         str.replace(regex2,"");
+   }
+   let arr = str.split("");
+   for(let i=0 ; i < arr.length ; i++){
+       switch(arr[i]){
+           case '&': arr[i] = "&amp;";
+           break ;
+           case '<': arr[i] = "&lt;";
+           break ;
+           case '>': arr[i] = "&gt;";
+           break ;
+           case '"': arr[i] = "&quot;";
+           break ;
+           case '\'': arr[i] = "&apos;";
+           break ;
+       }
+   }
+  return arr.join("");
+}
+convertHTML("Dolce & Gabbana");
