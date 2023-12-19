@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+$main-color : #2196f3 ;
+$second-color : #009688 ;
+$light-color : white ;
+%txt-center{
+    text-align: center;
+}
+%font-bold{
+    font-weight: bold;
+}
+
+
+.game{
+    background-color: #eee;
+    min-height: 100vh;
+}
+.name{
+    background-color: $main-color;
+    color: $light-color;
+    padding: 20px;
+    font-size: 25px;
+    margin-bottom: 20px ;
+    @extend %font-bold ;
+    @extend %txt-center ;
+}
+.container{
+    margin: auto;
+    max-width: 900px;
+    .message{
+        background-color: $light-color;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 6px;
+        font-size: 20px;
+        margin-bottom: 20px ;
+        @extend %txt-center ;
+        .lvl{
+            border-color: $second-color;
+            border-radius: 3px;
+            color: $second-color;
+            padding: 5px ;
+            margin-right: 5px ;
+            @extend %font-bold ;
+            &:focus{
+                outline: none ;
+            }
+            &.none{
+                display: none ;
+            }
+            + div {
+              @extend %font-bold ;
+              color : $second-color ;
+              display: none ;
+            }
+        }
+        span{
+            @extend %font-bold ;
+            color : $second-color ;
+        }
+    }
+    
+    .start{
+        @extend %txt-center ;
+        @extend %font-bold ;
+        font-size: 20px;
+        color: $light-color;
+        background-color: $second-color;
+        padding: 20px;
+        cursor: pointer;
+        border-radius: 4px;
+        margin-bottom: 20px
+    }
+    
+    .the-word{
+        @extend %txt-center ; 
+        @extend %font-bold ;
+        color: $main-color;
+        font-size: 60px;
+        user-select: none;
+        + input{
+            margin: 15px 0;
+            width: 100%;
+            display: block;
+            padding: 15px;
+            border: 3px solid $main-color;
+            border-radius: 4px;
+            font-size: 20px;
+            text-transform: capitalize;
+            caret-color: $main-color ;
+            @extend %txt-center ;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+
+    .upcoming-words{
+        background-color: $light-color;
+        margin: 15px 0;
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap ;
+        justify-content: center;
+        div{
+           background-color: $main-color;
+           color: $light-color;
+           @extend %font-bold ;
+           margin: 4px;
+           padding: 10px;
+           border-radius: 6px;
+        }
+    }
+
+    .control{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $light-color;
+        padding: 15px;
+        span{
+            @extend %font-bold ;
+            color: $second-color;
+        }
+    }
+
+    .finish{
+        @extend %font-bold ; 
+        @extend %txt-center ; 
+        font-size: 40px ;
+        padding: 15px ;
+        .good{
+            color: green;
+        }
+        .bad{
+            color: red;
+        }
+    }
+
+    .prev-score{
+        @extend %txt-center;
+        word-spacing: pre;
+        h3{
+            margin-bottom: 10px ;
+        }
+        .history{
+            @extend %txt-center;
+            margin: 15px auto;
+            font-size: 18px;
+            @extend %font-bold ;
+            color: $second-color;
+        }
+        button{
+            padding : 8px ;
+            color : $light-color ;
+            background-color: red;
+            border: none;
+            border-radius: 2px;
+            margin-bottom: 15px;
+        }
+    }
+}
