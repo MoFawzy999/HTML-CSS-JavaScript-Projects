@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>E-commerce</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!--for box icons-->
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" type="text/css" rel="stylesheet">
+         <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&amp;display=swap" rel="stylesheet">
+        <!--My CSS--> 
+        <link href="css/Style.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <img src="images/shopping.png" alt="">
+                    <div class="links">
+                        <span class="menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                        <ul>
+                            <li><a class="active" data-cat=".elec" href="#">Electronics</a></li>
+                            <li><a data-cat=".fashion" href="#">Fashion</a></li>
+                            <li><a data-cat=".grocery" href="#">Groceries</a></li>
+                            <li><a data-cat=".sports" href="#">Sports</a></li>
+                        </ul>
+                    </div>
+                    <i class="bx bx-shopping-bag cart-icon"></i>
+                    <div class="notify">0</div>
+                    <!--shopping-cart-->
+                    <div class="cart">
+                        <h2 class="cart-title">Your Cart</h2>
+                        <div class="cart-content"></div>
+                            <div class="total">
+                               <div class="total-title">Total:</div>
+                               <div class="total-price">0$</div>
+                            </div>
+                            <button type="button" class="btn-buy">Buy Now</button>
+                            <i class="bx bx-x cart-close"></i>
+                    </div>
+                   
+                </nav>
+            </div>
+        </header>
+
+        <section class="shop container elec">
+            <h2 class="section-title">Electronic Products</h2>
+             <div class="shop-content">
+                <div class="product-box">
+                    <img src="images/electronic1.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">Camera Nikon D750</h2>
+                        <span class="product-price">$800</span>
+                        <p> an FX-format camera well-suited to both still imaging and video recording.</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+                <div class="product-box">
+                    <img src="images/electronic2.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">PS5 Joystech</h2>
+                        <span class="product-price">$50</span>
+                        <p>Wireless Controller for PlayStation 5</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+                <div class="product-box">
+                    <img src="images/electronic3.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">Galaxy Z Smart</h2>
+                        <span class="product-price">$400</span>
+                        <p> an Android-based foldable smartphone developed by Samsung as part of the Samsung Galaxy Z series</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+                <div class="product-box">
+                    <img src="images/electronic4.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">Apple Watch</h2>
+                        <span class="product-price">$150</span>
+                        <p>Watch SE GPS 44mm Aluminium Case With Sport Band Midnight</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+                <div class="product-box">
+                    <img src="images/electronic5.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">Xiaomi smart TV</h2>
+                        <span class="product-price">$1050</span>
+                        <p>Xiaomi Mi Desktop Full HD Monitor 1C, BHR4510GL, 23.8 inch, 60 Hz - Black</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+                <div class="product-box">
+                    <img src="images/electronic6.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">Apple AirPods </h2>
+                        <span class="product-price">$100</span>
+                        <p> Wireless Earbuds with Lightning Charging Case Included. Over 24 Hours of Battery Life, Effortless Setup. Bluetooth Headphones for iPhone</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+                <div class="product-box">
+                    <img src="images/electronic7.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">Multi Plug</h2>
+                        <span class="product-price">$10</span>
+                        <p>Multi Plug Outlet Surge Protector - YISHU 3 Sided Power Strip with 6 AC Outlet Extender and 3 USB Ports (1 USB C)</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+                <div class="product-box">
+                    <img src="images/electronic8.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">Kindle Paperwhite</h2>
+                        <span class="product-price">$140</span>
+                        <p>Kindle Paperwhite Kids (16 GB) Made for reading - access thousands of books with Amazon Kids+, 2-year worry-free guarantee</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+
+             </div>
+        </section>
+
+        <section class="shop container sports">
+            <h2 class="section-title">Sport Products</h2>
+             <div class="shop-content">
+                <div class="product-box">
+                    <img src="images/sport1.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">sneakers</h2>
+                        <span class="product-price">$20</span>
+                        <p>Starter Walking Shoe For Unisex 41</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+                <div class="product-box">
+                    <img src="images/sport2.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title"> Adidas Backbag</h2>
+                        <span class="product-price">$5</span>
+                        <p>simple backpack made from recycled materials.fill your own water bottle at home. Keep making your choices.</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+                <div class="product-box">
+                    <img src="images/sport3.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">Sport water bottle</h2>
+                        <span class="product-price">$4</span>
+                        <p>Sports Water Bottle 1000 ml, BPA Free Leakproof Motivational Water Bottle for Travel, Fitness, Outdoor Sports, Home, School,Gym,Yoga &Office </p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+                <div class="product-box">
+                    <img src="images/sport4.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">ACTIVNEW TEAMBAG</h2>
+                        <span class="product-price">$19</span>
+                        <p>ACTIVNEW TEAMBAG,NAVY*BLK,24</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+                <div class="product-box">
+                    <img src="images/sport5.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">UA Travel</h2>
+                        <span class="product-price">$50</span>
+                        <p>UA Travel Duffle Waterproof Bag Shoulder and Handbag Under Armour 50L Backpack - Green , 2725617561864</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+                <div class="product-box">
+                    <img src="images/sport6.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">Under-Desk Walking Treadmill</h2>
+                        <span class="product-price">$279</span>
+                        <p>Goplus 1HP Under-Desk Walking Treadmill Jogging Exercise Machine w/ Remote Controller</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+                <div class="product-box">
+                    <img src="images/sport7.png" alt="">
+                    <div class="info">
+                        <h2 class="product-title">Non Slip Mat for Yoga</h2>
+                        <span class="product-price">$24</span>
+                        <p>Yoga Exercise Fitness 10mm Extra Thick High Density Non Slip Mat for Yoga Camping Gym</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+             </div>
+        </section>
+
+        <section class="shop container fashion">
+            <h2 class="section-title">Fashion Products</h2>
+            <div class="shop-content">
+                <div class="product-box">
+                    <img src="images/fashion1.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">Sunglasses</h2>
+                        <span class="product-price">$14</span>
+                        <p>Sunglasses from Gentle Monster</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+                <div class="product-box">
+                    <img src="images/fashion2.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">Pullover</h2>
+                        <span class="product-price">$34</span>
+                        <p>Gray and Black Striped Crew-neck Top</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+                <div class="product-box">
+                    <img src="images/fashion3.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">Cotton Hoodie</h2>
+                        <span class="product-price">$44</span>
+                        <p>Heavy and soft material for better comfort and feel,Side pockets with an attractive look,Can be used at home and outdoor,Casual design to fit all</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+                <div class="product-box">
+                    <img src="images/fashion4.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">DOTT JEANS WEAR </h2>
+                        <span class="product-price">$24</span>
+                        <p>DOTT JEANS WEAR Men Basic Soft Cargo</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+                <div class="product-box">
+                    <img src="images/fashion5.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">T-Shirts</h2>
+                        <span class="product-price">$14</span>
+                        <p>Printed T-Shirts Short Sleeve - Round Neck - For Women dark gray</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+                <div class="product-box">
+                    <img src="images/fashion6.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">Man Regular Fit Crew Neck Pullover</h2>
+                        <span class="product-price">$27</span>
+                        <p>DeFacto mens Regular Fit Grey and Yellow printed Pullover Sweater</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="shop container grocery">
+            <h2 class="section-title">Groceries Products</h2>
+            <div class="shop-content">
+                <div class="product-box">
+                    <img src="images/grocery1.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">Dry Food</h2>
+                        <span class="product-price">$30</span>
+                        <p>Brand: Don Canino,Flavor: Beef,Type: Dry Food,Target Breed: Dogs,Size: 15 Kg,Life Stage: Adult</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+                <div class="product-box">
+                    <img src="images/grocery2.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">Espresso Intense</h2>
+                        <span class="product-price">$10</span>
+                        <p>Size 500g , Fine Grind (Espresso),Top-notch Arabica Coffee Beans</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+                <div class="product-box">
+                    <img src="images/grocery3.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">PROTEIN POWDER</h2>
+                        <span class="product-price">$15</span>
+                        <p>Now Foods Chicken Bone Broth Pwd 1.2 lbs</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+                <div class="product-box">
+                    <img src="images/grocery4.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">Sundown Naturals</h2>
+                        <span class="product-price">$10</span>
+                        <p>Sundown Naturals Echinacea Whole Herb 400 mg Capsules 100 Count</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+                <div class="product-box">
+                    <img src="images/grocery5.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">BBQ Sauce</h2>
+                        <span class="product-price">$2</span>
+                        <p>Naturesta BBQ Classic 355 Gm (Diet Sauces)</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+                <div class="product-box">
+                    <img src="images/grocery6.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">LIPTON Yellow Tea</h2>
+                        <span class="product-price">$2.5</span>
+                        <p>LIPTON Yellow Label 100 Bags 200G</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+                <div class="product-box">
+                    <img src="images/grocery7.jpg" alt="">
+                    <div class="info">
+                        <h2 class="product-title">Natural Erythritol</h2>
+                        <span class="product-price">$16</span>
+                        <p>100% Natural Erythritol 300g by NKD Living (Granulated)</p>
+                    </div>
+                    <a href="#">Add to Cart</a>
+                </div>
+            </div>
+        </section>
+
+        <script src="myScript.js"></script>
+    </body>
+
+    </html>
