@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog click</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" type="text/css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <section class="clock container">
+        <div class="clock-container d-grid align-self-center">
+            <div class="clock-content d-grid">
+                <div class="clock-circle position-relative rounded-circle d-flex justify-content-center align-items-center">
+                     <span class="clock-twelve position-absolute"></span>
+                     <span class="clock-three position-absolute"></span>
+                     <span class="clock-six position-absolute"></span>
+                     <span class="clock-nine position-absolute"></span>
+
+                     <div class="clock-rounder position-absolute rounded-circle z-3"></div>
+                     <div class="clock-hour position-absolute d-flex justify-content-center"></div>
+                     <div class="clock-minutes position-absolute d-flex justify-content-center"></div>
+                     <div class="clock-seconds position-absolute d-flex justify-content-center"></div>
+
+                     <div class="clock-theme position-absolute d-flex rounded-circle p-1">
+                        <i class='bx bxs-moon'></i>
+                     </div>
+                </div>
+                <div class="mt-5">
+                    <div class="clock-txt d-flex justify-content-center">
+                        <div class="clock-txt-hours fw-medium fs-1"></div>
+                        <div class="clock-txt-minutes fw-medium fs-1"></div>
+                        <div class="clock-txt-ampm fs-6 fw-medium ms-1"></div>
+                    </div>
+                    <div class="clock-date text-center fw-medium fs-2 d-flex justify-content-center align-items-center">
+                        <div class="date-day pe-3"></div>
+                        <div class="date-month pe-3"></div>
+                        <div class="date-year"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
