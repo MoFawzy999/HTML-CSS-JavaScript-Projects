@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Weather App</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+         <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&amp;display=swap" rel="stylesheet">
+        <!--My CSS--> 
+        <link href="css/Style.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="heading container">
+            <img src="images/logo.png" alt="">
+            <h2>Weather App</h3>
+        </div>
+
+        <div class="weather-content container">
+           <div class="weather-inputs">
+               <h3>Enter a City name:</h3>
+               <input type="text" placeholder="E.g,New York,London,Tokyo" class="search-input">
+               <button class="search-btn">Search</button>
+               <div class="separator"></div>
+               <button class="curr-location-btn">Use Your Current Location</button>
+           </div>
+           <div class="weather-data">
+                <div class="current-weather">
+                    <div class="details">
+                        <h2>----- (------)</h2>
+                        <h4>Temperature:---°C</h4>
+                        <h4>Wind:---M/S</h4>
+                        <h4>Humidity:---%</h4>
+                    </div>
+                    <div class="icon">
+                        <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather-icon">
+                        <h4>Moderate Rain</h4>
+                    </div>
+                </div>
+                <div class="forecasts-days">
+                    <h2>5-Day Forecast</h2>
+                    <div class="days">
+                        <div class="day">
+                            <h3>-----</h3>
+                            <h4>Temperature:---°C</h4>
+                            <h4>Wind:---M/S</h4>
+                            <h4>Humidity:---%</h4>
+                        </div> 
+                        <div class="day">
+                            <h3>-----</h3>
+                            <h4>Temperature:---°C</h4>
+                            <h4>Wind:---M/S</h4>
+                            <h4>Humidity:---%</h4>
+                        </div>
+                        <div class="day">
+                            <h3>-----</h3>
+                            <h4>Temperature:---°C</h4>
+                            <h4>Wind:---M/S</h4>
+                            <h4>Humidity:---%</h4>
+                        </div>
+                        <div class="day">
+                            <h3>-----</h3>
+                            <h4>Temperature:---°C</h4>
+                            <h4>Wind:---M/S</h4>
+                            <h4>Humidity:---%</h4>
+                        </div>
+                        <div class="day">
+                            <h3>-----</h3>
+                            <h4>Temperature:---°C</h4>
+                            <h4>Wind:---M/S</h4>
+                            <h4>Humidity:---%</h4>
+                        </div>
+                    </div>
+                </div>
+           </div>
+
+        </div>
+ 
+        
+        <script src="myScript.js"></script>
+    </body>
+</html>
