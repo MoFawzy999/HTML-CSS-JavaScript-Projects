@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+%slider-Btn{
+  background-color: #009688;
+  color: #FFF;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 5px;
+  user-select: none;
+  width: 20%;
+}
+.slider{
+    &-container{
+        margin: 100px auto 0 ;
+        width: 800px;
+        height: 300px;
+        position: relative;
+        img{
+            position: absolute;
+            opacity: 0;
+            transition: opacity 1s;
+            z-index: 1;
+            width: 90%;
+            max-height: 100%;
+            margin: 0 5% ;
+            &.active{
+                opacity: 1;
+            }
+        }
+    }
+    &-number {
+        position: absolute;
+        left: 50px;
+        top: 10px;
+        background-color: rgba(0, 0, 0, .6);
+        color: #FFF;
+        padding: 5px 10px;
+        font-size: 20px;
+        z-index: 2;
+        border-radius: 6px;
+    }
+    &-control{
+        width: 800px;
+        margin: 15px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .prev{
+           @extend %slider-Btn ;
+           &.disabled{
+               background-color: rgba(0 , 150 , 136, 0.5) ;
+               cursor: no-drop ;
+           }
+        }
+        .next{
+            @extend %slider-Btn ;
+            &.disabled{
+                background-color: rgba(0 , 150 , 136, 0.5) ;
+                cursor: no-drop ;
+            }
+        }
+        .indicators{
+            width: 60%;
+            ul{
+                list-style: none;
+                text-align: center;
+                li{
+                    display: inline-block;
+                    background-color: #ccc;
+                    color: #333;
+                    font-weight: bold;
+                    height: 28px;
+                    width: 28px;
+                    border-radius: 4px;
+                    margin: 0 2px;
+                    line-height: 28px;
+                    cursor: pointer;
+                    &.active{
+                        background-color: #009688;
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+    }
+}
