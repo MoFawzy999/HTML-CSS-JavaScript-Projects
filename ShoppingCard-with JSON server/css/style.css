@@ -1,0 +1,62 @@
+body{
+    font-family: Tahoma ,Arial;
+    background-color: #ececec;
+}
+.product{
+    border: .1rem solid;
+    height: 350px;
+}
+.product-img img{
+    max-width: 100%;
+    min-height: 70%;
+}
+.product-img span{
+    left: 1rem ;
+    top: 1rem;
+    background-color: red;
+    color: white;
+    border-radius: 1rem;
+    padding: .5rem;
+    position : absolute ;
+}
+.product-services{
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.6s;
+}
+.product-services i{
+   cursor: pointer;
+   transition: .4s;
+}
+.product-services i:hover{
+   color: #9A3B3B;
+}
+.product-img:hover .product-services{
+   bottom: 1rem;
+}
+.product-price{
+    bottom: .5rem;
+    left: 0;
+}
+   
+
+.wich-list{
+    color: red;
+}
+.close{
+    right: 1rem ;
+    top : 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.close:hover{
+    color : red ;
+} 
+
+@media (min-width:768px) and (max-width:992px){
+    .product{
+        height: 270px ;
+    }
+}
