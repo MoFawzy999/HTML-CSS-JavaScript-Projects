@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <link href="./css/all.min.css" rel="stylesheet" >
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet" >
+</head>
+
+<body>
+ 
+   <div class="pagination text-white">
+    <div class="container py-3">
+        <h1 class="bg-danger p-2 rounded-3 shadow text-center">Pagination With Json Server</h1>
+        <div class="row g-3 justify-content-center align-items-center py-3 mb-3" id="showPosts"></div>
+        <div class="pagination-counter">
+            <ul class="pagination justify-content-center">
+                <li class="page-item" aria-label="Previous">
+                    <a class="page-link prev" href="#">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link paginate-item active" href="#">1</a></li>
+                <li class="page-item"><a class="page-link paginate-item" href="#">2</a></li>
+                <li class="page-item"><a class="page-link paginate-item" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link next" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div> 
+   </div> 
+       
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
