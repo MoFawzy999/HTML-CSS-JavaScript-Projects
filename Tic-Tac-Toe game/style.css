@@ -1,0 +1,42 @@
+.game{
+    width: 300px ;
+    text-align: center;
+    font-family: system-ui, sans-serif;
+    color: white;
+    margin: auto;
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.title{
+    background-color: #f25;
+    padding: 5px 0;
+    margin: 40px auto;
+    width : 400px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    padding: 10px 0;
+}
+.title span{
+    color: #fa0;
+    font-weight: bold;
+    padding-right: 10px;
+}
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: #f25;
+    margin: 2px;
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square:hover{
+    background-color: #000;
+    cursor: pointer;
+}
