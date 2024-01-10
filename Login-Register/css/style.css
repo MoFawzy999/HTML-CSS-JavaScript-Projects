@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins' , sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #02030f;
+}
+.register-form {
+    display: none;
+    transition: display 0.5s ease;
+}
+.login-form{
+    transition: display 0.5s ease;
+}
+.register-form , .login-form{
+    padding: 25px;
+    background-color: #ecf0f1;
+    border-radius: 7px;
+    width : 100% ;
+    max-width: 500px;
+    box-shadow: 0 10px 15px rgb(0,0,0,0.5);
+    color: #09111a;
+}
+.register-form h3 , .login-form h3{
+    font-size: 27px;
+    text-align: center;
+    margin: 0 0 20px;
+}
+.register-form .form-group , .login-form .form-group{
+    margin-bottom: 15px;
+    position: relative;
+}
+.register-form .form-group label , .login-form .form-group label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+.register-form .form-group input:not(input[type="submit"]),
+.login-form .form-group input:not(input[type="submit"]) {
+    height: 45px;
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+    background-color: #fff;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid#5a636d;
+}
+.register-form .form-group input:not(input[type="submit"]):focus , 
+.login-form .form-group input:not(input[type="submit"]):focus{
+   border: 1px solid #060c13;
+}
+input.error{
+    border: 1px solid red !important;
+}
+.register-form .form-group.password i , .register-form .form-group.config-password i 
+, .login-form .form-group.password i {
+    position: absolute;
+    right: 0;
+    height: 45px;
+    top: 28px;
+    font-size: 13px;
+    line-height: 45px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.submit-btn input{
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    background: #02030f;
+    color: #fff;
+    width: 100%;
+    border-radius: 8px;
+    height: 50px ;
+    cursor: pointer;
+}
+form ~ div{
+    text-align: center;
+}
+form ~ div a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
