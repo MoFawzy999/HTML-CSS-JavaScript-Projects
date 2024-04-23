@@ -43,7 +43,7 @@ passToggle.addEventListener("click", () =>{
         document.querySelector(".password i").className = " fa-solid fa-eye-slash";
     }else{
         passwordInput.type = "password" ;
-        document.querySelector(".password i").className = " fa-solid fa-eye";
+        document.querySelector(".password i").className = "fa-solid fa-eye";
     }
 });
 configPassToggle.addEventListener("click", () =>{
@@ -55,6 +55,8 @@ configPassToggle.addEventListener("click", () =>{
         document.querySelector(".config-password i").className = "fa-solid fa-eye";
     }
 });
+
+
 //form data handling 
 let saveUser = (user,pass,passConf) =>{
     if(Object.keys(user).length > 2 && passConf == pass){
@@ -62,6 +64,7 @@ let saveUser = (user,pass,passConf) =>{
         localStorage.setItem("users",JSON.stringify(users));
     }
 };
+
 let handleFormData = () =>{
 
     let username = fullnameInput.value.trim();
@@ -124,7 +127,6 @@ let handleFormData = () =>{
 registerForm.addEventListener("submit", (e) =>{
     e.preventDefault();
     handleFormData();
-
 });
 
 
